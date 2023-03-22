@@ -1,0 +1,67 @@
+body{
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+button{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #5f6368;
+    color: azure;
+    transition : background-color 0.3s  ease; 
+    font-size: 18px;
+}
+
+.number{
+    background-color: #3c4043;
+}
+
+.current-display{
+    font-size: 20px;
+    height : 20px;
+}
+
+button:hover{
+    background-color: rgb(31, 25, 25);
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border : 2px solid black;
+    border-radius: 50px;
+    min-width: 300px;
+    max-width: 750px;
+    padding-left : 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+}
+.upper-display{
+    border: 2px solid black;
+    margin: 5px;
+    text-align: end;
+    padding: 10px;
+    padding-right: 30px;
+    background-color: #3c4043;
+    color:white;
+    border-radius: 7px;
+}
+
+.buttons-container{
+    border : 2px solid black;
+    margin: 5px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+    grid-template-rows: repeat(5,30px);
+    border-radius: 8px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    align-self: center;
+}
